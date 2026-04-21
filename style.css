@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", serif;
+}
+
+body {
+    background-color: #5e3c0f;
+    color: bisque;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem auto;
+    max-width: 1200px;
+    padding: 0 2rem;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: bisque;
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
+    transition: color 0.2s ease;
+}
+
+.navigation a:hover {
+    color: #ffffff;
+}
+
+hr {
+    opacity: 0.1;
+    margin: 0 2rem;
+}
+
+.hero {
+    min-height: 70vh;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url('assets/imgs/hero-art.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    opacity: 0.85;
+}
+
+.explore-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: bisque;
+    color: #5e3c0f;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    margin-top: 0.5rem;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.explore-btn:hover {
+    background-color: #ffe4c4cc;
+    transform: translateY(-2px);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: bisque;
+    letter-spacing: 0.03em;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    opacity: 0.7;
+    margin-top: 0.5rem;
+}
+
+.gallery-section {
+    max-width: 1200px;
+    margin: 6rem auto;
+    padding: 0 2rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.gallery-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(245, 222, 179, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(245, 222, 179, 0.35);
+}
+
+.gallery-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-info {
+    padding: 1.2rem 1.4rem 1.4rem;
+}
+
+.gallery-art-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: bisque;
+    margin-bottom: 0.5rem;
+}
+
+.gallery-art-desc {
+    font-size: 0.88rem;
+    line-height: 1.7;
+    opacity: 0.7;
+}
+
+.artists-section {
+    max-width: 1100px;
+    margin: 6rem auto;
+    padding: 0 2rem;
+}
+
+.artists-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 2.5rem;
+}
+
+.artist-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.artist-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(245, 222, 179, 0.2);
+    margin-bottom: 1.1rem;
+    flex-shrink: 0;
+}
+
+.artist-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: bisque;
+    margin-bottom: 0.6rem;
+}
+
+.artist-bio {
+    font-size: 0.88rem;
+    line-height: 1.75;
+    opacity: 0.7;
+    max-width: 260px;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1100px;
+    margin: 5rem auto;
+    padding: 0 2rem;
+}
+
+.Aboutimg {
+    width: 420px;
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.textcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.texttile {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.aboutname {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    color: bisque;
+    line-height: 1.1;
+}
+
+.AboutPar {
+    font-size: 1rem;
+    line-height: 1.8;
+    opacity: 0.85;
+    max-width: 480px;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Aboutimg {
+        width: 100%;
+    }
+
+    .texttile {
+        justify-content: center;
+    }
+
+    .AboutPar {
+        max-width: 100%;
+    }
+}
